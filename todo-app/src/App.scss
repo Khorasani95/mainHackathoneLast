@@ -1,0 +1,75 @@
+@import "./scss/bootstrap";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(-135deg, #83227c, #334ccb);
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  max-width: 500px;
+  margin: auto;
+  padding: 1.5rem;
+  background: rgb(137, 48, 48);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: 90%;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #4158d0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+
+  &:hover {
+    background: #6c2567;
+    transform: scale(1.05);
+  }
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.iconimg {
+  position: absolute;
+  right: 10px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#button {
+  text-align: center;
+  width: 20%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background: #c850c0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #23379e;
+  }
+}
